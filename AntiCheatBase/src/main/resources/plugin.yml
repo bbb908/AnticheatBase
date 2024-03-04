@@ -1,4 +1,4 @@
-name: AntiRGB
+name: AnticheatBase
 version: '${project.version}'
 main: me.bbb908.AnticheatBase.Anticheat
 api-version: '1.18'
