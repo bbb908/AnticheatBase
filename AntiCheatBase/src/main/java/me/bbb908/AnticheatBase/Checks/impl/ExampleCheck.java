@@ -13,6 +13,8 @@ public class ExampleCheck extends Check {
 
     @Override
     public void onPacket(PacketEvent event) {
+        if (!isMovePacket()) return;
+        
         MovementHandler movementHandler = getProfile().getMovementHandler();
 
         if (movementHandler.deltaXZ > movementHandler.predictSpeed()) {
